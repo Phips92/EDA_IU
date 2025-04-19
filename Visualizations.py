@@ -407,7 +407,7 @@ def plot_top_cause_rank_shift(prep, continent=None, country=None, top_n=10):
     pivot = pivot.sort_values(1990)
 
     # Plot
-    fig, ax = plt.subplots(figsize=(10, 8))
+    fig, ax = plt.subplots(figsize=(12, 8))
     lines = []
     labels = []
 
