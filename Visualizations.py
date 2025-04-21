@@ -230,7 +230,7 @@ def plot_alcohol_vs_deathrate(prep, cause, continent=None, country=None):
     corr = merged[["Alcohol_Consumption_Liters", "Death_Rate_per_100k"]].corr().iloc[0, 1]
 
     sns.set(style="whitegrid", context="talk")
-    g = sns.jointplot(data=merged, x="Alcohol_Consumption_Liters", y="Death_Rate_per_100k", kind="hex", cmap="viridis", height=10, marginal_kws=dict(bins=30, fill=True))
+    g = sns.jointplot(data=merged, x="Alcohol_Consumption_Liters", y="Death_Rate_per_100k", kind="hex", cmap="mako_r", height=10, marginal_kws=dict(bins=30, fill=True))
     g.fig.set_figwidth(15)
     g.fig.set_figheight(10)
     g.ax_joint.set_xlabel("Alcohol Consumption (liters per capita)")
@@ -279,7 +279,7 @@ def plot_joint_kde(prep, cause_x, cause_y, continent=None, year=None):
 
     # Plot KDE
     sns.set(style="white", font_scale=1.2)
-    g = sns.jointplot(data=df, x="x_rate", y="y_rate", kind="kde", fill=True, thresh=0.05, cmap="mako", height=8)
+    g = sns.jointplot(data=df, x="x_rate", y="y_rate", kind="kde", fill=True, thresh=0.05, cmap="mako_r", height=8)
     g.set_axis_labels( f"{cause_x} Death Rate (per 100k)", f"{cause_y} Death Rate (per 100k)", fontsize=12)
     g.fig.set_figwidth(15)
     g.fig.set_figheight(10)
