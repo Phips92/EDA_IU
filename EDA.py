@@ -50,6 +50,8 @@ def run_initial_eda(prep):
 
     #Heatmap of deaths by cause and year
     pivot = df.pivot_table(index="Cause", columns="Year", values="Deaths", aggfunc="sum")
+    pivot["mean"] = pivot.mean(axis=1)
+    pivot = pivot.sort_values(by="mean", ascending=False).drop(columns="mean")
     plt.figure(figsize=(14, 10))
     sns.heatmap(pivot, cmap="mako_r", linewidths=0.3)
     plt.title("Total Number of Deaths by Cause and Year")
