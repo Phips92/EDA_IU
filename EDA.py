@@ -1,3 +1,7 @@
+""" 
+Copyright C Philipp Mc Guire, 2025
+Lincensed under GPL V3.0 https://www.fsf.org/licensing/licenses/gpl-3.0.html 
+"""
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -47,7 +51,7 @@ def run_initial_eda(prep):
     #Heatmap of deaths by cause and year
     pivot = df.pivot_table(index="Cause", columns="Year", values="Deaths", aggfunc="sum")
     plt.figure(figsize=(14, 10))
-    sns.heatmap(pivot, cmap="mako", linewidths=0.3)
+    sns.heatmap(pivot, cmap="mako_r", linewidths=0.3)
     plt.title("Total Number of Deaths by Cause and Year")
     plt.xlabel("Year")
     plt.ylabel("Cause of Death")

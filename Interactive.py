@@ -1,3 +1,8 @@
+""" 
+Copyright C Philipp Mc Guire, 2025
+Lincensed under GPL V3.0 https://www.fsf.org/licensing/licenses/gpl-3.0.html 
+"""
+
 import pandas as pd
 import geopandas as gpd
 from shapely.geometry import mapping, Polygon, MultiPolygon

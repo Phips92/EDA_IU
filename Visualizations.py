@@ -1,3 +1,7 @@
+""" 
+Copyright C Philipp Mc Guire, 2025
+Lincensed under GPL V3.0 https://www.fsf.org/licensing/licenses/gpl-3.0.html 
+"""
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np

@@ -1,9 +1,13 @@
+""" 
+Copyright C Philipp Mc Guire, 2025
+Lincensed under GPL V3.0 https://www.fsf.org/licensing/licenses/gpl-3.0.html 
+"""
 import pandas as pd
 import numpy as np
 import pycountry_convert as pc
 
 class DataPreparation:
-    # Manual fallback for country → continent mapping
+    # Manual fallback for country -> continent mapping
     manual_continent_map = {
         "Bolivia (Plurinational State of)": "South America",
         "China, Hong Kong SAR": "Asia",
