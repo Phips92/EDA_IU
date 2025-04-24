@@ -39,6 +39,10 @@ All datasets are preprocessed and merged using a custom pipeline (`preprocess.py
 | `Interactive.py` | Interactive global mortality map built with Bokeh. |
 
 ---
+## Example Outputs
+
+A selection of generated plots has been included in the Visualizations/ directory for reference. These static images showcase the output of the main visualization functions, such as global death rate trends, cause-specific mortality comparisons, and correlation-based hexbin or KDE plots. They provide a quick overview of what users can expect when running the analysis.
+---
 
 ## How to Run
 
